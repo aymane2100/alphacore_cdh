@@ -1,0 +1,22 @@
+okta:
+  iss: https://gem-beta.oktapreview.com/oauth2/aus3v6rg3e9zNHMxe0x6
+  aud: api://gems
+  scope:
+    - api.jefe
+    - api.swaggit
+  client_id: '2-s-jefe-connector-PEG0I81B3VPW3OV'
+  pswd:  !AZURE_VAULT ['JEFEBETASECRET']
+
+okta_prod:
+  iss: https://gem.okta-emea.com/oauth2/aus2jp8vmz3yYrDnc0i7
+  aud: api://gems
+  scope:
+    - api.jefe
+    - api.swaggit
+  client_id: '3-s-jefe-connector-KHJCS88M0IEHXS5'
+  pswd:  !AZURE_VAULT ['JEFESECRET']
+
+alphacore:
+  url: 'https://cylon-dev.gem.myengie.com/alphacore/api/v1'
+  url_prod: 'https://cylon.gem.myengie.com/alphacore/api/v1'
+  client_PDA: 'PDA'
